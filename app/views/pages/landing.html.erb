@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <h1>Landing Page</h1>
+    <table class="table table-stripped">
+      <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+      </thead>
+      <tbody>
+        <% @students.each do |student| %>
+          <tr>
+            <td><%= student.name %></td>
+            <td><%= student.age %></td>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
